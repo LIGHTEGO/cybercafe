@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+    <form action="mailto:rohitshaw3622@gmail.com">
+        <h1 style="text-transform: uppercase; text-align: center;color: rgb(46, 231, 231);text-decoration: underline;text-shadow: 2px 2px 2px rgb(46, 231, 231);">Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <label for="">Name : * </label>
+        <p><input type="text" name="name" id="name" placeholder="Rahul jha" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male : <input type="radio" name="gender" id="male">
+                Female : <input type="radio" name="gender" id="female">
+            </p>
+        </fieldset>
+        <p>
+        Address :* </p>
+        <p>
+        <textarea name="address" id="address" required cols="100" rows="8" placeholder="Enter your address"></textarea>
+        </p>
+        <p> E mail : <input type="email" name="email" id="email" placeholder="Rahul@gmail.com"> </p>
+        <p> Pincode :* <input type="number" required name="pincode" id="pincode" placeholder="123456"></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <hr>
+        <p> Card type:
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a card type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>
+            Card Number :* <input type="number"required name="Card_number" id="Card_number" placeholder="1111-2222-3333-4444">
+        </p>
+        <p>
+            Expiry Date:* <input type="date" required name="Date" id="Date" placeholder="01-01-2030">
+        </p>
+        <p>CVV :* <input type="password"required name="cvv" id="cvv"></p>
+        <input type="submit" value="Pay Now">
+    </form>
+</div>
+<footer>
+    <a href="#">FAQ</a>
+    <a href="#">Contact us</a>
+    <a href="#">Terms of use</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Refund policy</a>
+    <a href="#">&copy;  2023 | ASIT SAHOO</a>
+</footer>
+</body>
+</html>
